@@ -26,3 +26,9 @@ export default async function Page ({params}: PageProps) {
         </div>
     )
 }
+
+// export async function generateStaticParams () {
+//     const resp = await fetch('http://localhost:3000/api/posts')
+//     const posts = await resp.json() as any[]
+//     return posts.map(post => ({id: '' + post.id}))
+// }

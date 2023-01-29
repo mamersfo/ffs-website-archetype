@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default function handler (req: NextApiRequest, res: NextApiResponse) {
     setTimeout(() => {
         return res.status(200).send(JSON.stringify(
             [
@@ -18,5 +18,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
                 }
             ]
         ))
-    }, 500)
+    }, 1000)
 }
