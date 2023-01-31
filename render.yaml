@@ -9,10 +9,6 @@ services:
     startCommand: yarn start
     healthCheckPath: /_health
     autoDeploy: false
-    disk:
-      name: strapi-uploads
-      mountPath: /opt/render/project/src/public/uploads
-      sizeGB: 1
     envVars:
       - key: NODE_ENV
         value: production
