@@ -2,6 +2,7 @@ services:
   - type: web
     name: strapi
     env: node
+    region: frankfurt
     plan: starter
     buildCommand: yarn install && yarn build
     startCommand: yarn start
@@ -31,4 +32,5 @@ services:
 
 databases:
   - name: strapi
+    region: frankfurt
     plan: starter
