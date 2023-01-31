@@ -16,7 +16,9 @@ export const NavLink = ({href, children}: NavLinkProps) => {
     return (
         <Link 
             className={active ? 'underline' : ''} 
-            href={href}>
+            href={href}
+            prefetch={false}
+        >
                 {children}
         </Link>
     )

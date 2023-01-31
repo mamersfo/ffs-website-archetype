@@ -1,14 +1,5 @@
 import { fetchAPI } from "../../../lib/strapi/api"
 
-// async function getPost (slug: string) {
-//     const resp = await fetch('http://localhost:3000/api/posts')
-//     const json = await resp.json() as any[]
-//     ('json:', json)
-//     const found = json.filter(d => d.slug === slug)
-//     if ( found.length > 0 ) return found[0]
-//     return null
-// }
-
 interface PageProps {
     params: {
         slug: string
@@ -17,7 +8,6 @@ interface PageProps {
 
 export default async function Page ({params}: PageProps) {
 
-    // const post = await getPost(params.slug)
     const result = await fetchAPI('/posts', {
         filters: { slug: params.slug }
     })
