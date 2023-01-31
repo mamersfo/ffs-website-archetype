@@ -28,6 +28,12 @@ services:
         generateValue: true
       - key: API_TOKEN_SALT
         generateValue: true
+      - key: CLOUDINARY_NAME
+        sync: false
+      - key: CLOUDINARY_KEY
+        sync: false
+      - key: CLOUDINARY_SECRET
+        sync: false
 
 databases:
   - name: strapi
