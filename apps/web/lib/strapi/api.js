@@ -5,9 +5,10 @@ import qs from "qs";
  * @param {string} path Path of the URL
  * @returns {string} Full Strapi URL
  */
+
 export function getStrapiURL(path = "") {
   return `${
-    process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337"
+    process.env.STRAPI_API_URL || "http://localhost:1337"
   }${path}`;
 }
 
