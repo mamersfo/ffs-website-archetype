@@ -33,6 +33,5 @@ services:
 
 databases:
   - name: strapi
-    rootDir: apps/cms
     region: frankfurt
     plan: starter
