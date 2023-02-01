@@ -15,7 +15,7 @@ export const NavLink = ({href, children}: NavLinkProps) => {
 
     return (
         <Link 
-            className={active ? 'underline' : ''} 
+            className={`tab tab-bordered ${active ? 'tab-active' : ''}`} 
             href={href}
             prefetch={false}
         >

@@ -10,7 +10,7 @@ export default async function Page ({children}: LayoutProps) {
     let posts = await fetchAPI('/posts')
 
     return (
-        <div className='flex gap-8'>
+        <div className='w-full flex flex-col md:flex-row gap-8'>
             <ul className='flex-none'>
                 {posts.data.map(({id, attributes}: {id: number, attributes: any}) => 
                     <li key={`movie-${attributes.slug}`}
